@@ -9,17 +9,17 @@ import org.springframework.context.annotation.Primary;
 
 @Configuration
 public class JacksonConfiguration {
-    @Bean
+    /*@Bean
     @Primary
     public SpringbootObjectMapper SpringbootObjectMapper(){
         return new SpringbootObjectMapper();
-    }
+    }*/
 
     /**
      * Support for Java date and time API.
      * @return the corresponding Jackson module.
      */
-    /*@Bean
+    @Bean
     public JavaTimeModule javaTimeModule() {
         return new JavaTimeModule();
     }
@@ -27,5 +27,5 @@ public class JacksonConfiguration {
     @Bean
     public Jdk8Module jdk8TimeModule() {
         return new Jdk8Module();
-    }*/
+    }
 }

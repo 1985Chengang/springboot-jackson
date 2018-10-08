@@ -8,7 +8,7 @@ import java.util.Date;
 
 public class AppOrder {
     private String code;
-    //@JsonFormat(pattern = "yyyy/MM/dd")
+    @JsonFormat(pattern = "yyyy/MM/dd")
     private LocalDate placeOrderDate;
 
     public String getCode() {
